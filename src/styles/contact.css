@@ -1,0 +1,138 @@
+:root {
+  --font: 'Inter', sans-serif;
+  --primary-weight: 800;
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --cyan: #00bcd4;
+  --lightblue: rgb(87, 192, 245);
+  --magenta: #e91e8c;
+  --purple: hsl(291, 100%, 66%);
+  --yellow: #ffd600;
+  --gray-100: #f5f5f5;
+  --gray-200: #e8e8e8;
+  --gray-400: #9e9e9e;
+  --gray-600: #555;
+  --gray-800: #222;
+  --gray-900: #151515;
+  --radius: 12px;
+}
+ 
+.contact-section {
+  background-color: var(--black); 
+  padding: 80px 0;
+  min-height: auto;
+}
+
+ 
+.contact-tag {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+}
+
+ .tag-dots {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.line-separator {
+  width: 25px;
+  height: 1px;
+  background-color: var(--gray-600);
+  display: inline-block;
+}
+.tag-text {
+  color: var(--lightblue); 
+}
+
+.label {
+  font-family: var(--font);
+  letter-spacing: -0.5px;
+  color:var(--white)!important;
+   
+}
+
+.contact-grid-container {
+  background-color:var(--gray-900);
+  border: 1px solid var(--gray-600);
+}
+
+
+.border-grid-segment {
+  border-bottom: 1px solid var(--gray-600);
+}
+
+@media (min-width: 992px) {
+  .border-grid-segment:not(:last-child) {
+    border-right: 1px solid var(--gray-600);
+  }
+  .border-grid-segment {
+    border-bottom: none;
+  }
+}
+
+
+.contact-card-link {
+  transition: background-color 0.25s ease-in-out;
+}
+
+.contact-card-link:hover {
+  background-color:var(--gray-800);
+}
+
+/* boxes of icons */
+.contact-icon-box {
+  width: 44px;
+  height: 44px;
+  border-width: 1.5px;
+  border-style: solid;
+}
+
+.box-blue {
+  background-color: rgba(59, 130, 246, 0.08);
+  border-color: var(--lightblue);
+  color: var(--lightblue);
+}
+
+.box-purple {
+  background-color: rgba(236, 72, 153, 0.08);
+  border-color: var(--purple);
+  color: var(--purple);
+}
+
+.box-yellow {
+  background-color: rgba(234, 179, 8, 0.08);
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+/* Meta Content */
+.tracking-wide {
+  letter-spacing: 1px;
+}
+
+ 
+.contact-label {
+  font-size: 1.05rem;
+  letter-spacing: -0.2px;
+ color:var(white)!important;
+}
+
+/* dot taba3 available */
+.availability-wrapper {
+  margin-top: 15px;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color:var(--lightblue);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px var(--lightblue);
+}
+
+.availability-text {
+  font-size: 0.88rem;
+  color: var(--gray-400) !important;
+}
+

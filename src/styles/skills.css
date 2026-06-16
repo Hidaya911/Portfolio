@@ -1,0 +1,160 @@
+:root{
+   --font:  'Inter', sans-serif;
+   --primary-weight:800;
+   --black: #0a0a0a;
+    --white: #ffffff;
+    --cyan: #00bcd4;
+    --lightblue:rgb(87, 192, 245);
+    --magenta: #e91e8c;
+    --purple: hsl(291, 100%, 66%);
+    --yellow: #ffd600;
+    --gray-100: #f5f5f5;
+    --gray-200: #e8e8e8;
+    --gray-400: #9e9e9e;
+    --gray-600: #555;
+    --gray-800: #222;
+    --gray-900: #151515;
+  
+    --radius: 12px;
+
+}
+
+.skills-section {
+  background-color: var(--black);
+  padding: 80px 0;
+  font-family: var(--font);
+border-bottom: 0.1px solid var(--gray-600) !important; 
+}
+
+
+.skills-tag {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.tag-dots {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.line-separator {
+  width: 25px;
+  height: 1px;
+  background-color: #555555;
+  display: inline-block;
+}
+
+.tag-text {
+  color: var(--lightblue);
+}
+
+.skills-main-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+
+/* Card Base Structure matching image_9e9e01.png layout */
+.skills-card {
+  background: var(--gray-900);
+  border: 1px solid var(--gray-600);
+  border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 30px var(--gray-900);
+}
+
+/* Base structural styles for the elements inside card */
+.card-icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background-color: var(--gray-900);
+  transition: transform 0.3s ease;
+}
+
+.card-category-title {
+  font-size: 1.25rem;
+  letter-spacing: -0.3px;
+}
+
+.card-title-separator {
+  width: 40px;
+  height: 2px;
+  border-radius: 2px;
+}
+
+.skill-item-text {
+  font-size: 14px;
+  color: var(--gray-400);
+  line-height: 1.4;
+}
+
+
+
+/* 1. CYAN THEME MODULE */
+.cyan-accent .card-icon-box {
+  color: var(--lightblue);
+  border: 1px solid var(--lightblue);
+  box-shadow: inset 0 0 12px rgba(0, 188, 212, 0.2), 0 0 15px rgba(0, 188, 212, 0.15);
+}
+.cyan-accent .card-category-title {
+  color: var(--lightblue);
+}
+.cyan-accent .card-title-separator {
+  background-color:var(--lightblue);
+}
+.cyan-accent .check-icon {
+  color: var(--lightblue);
+}
+.cyan-accent:hover {
+  border-color: var(--lightblue)!important;
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.15);
+}
+
+/* 2. MAGENTA THEME MODULE */
+.magenta-accent .card-icon-box {
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  box-shadow: inset 0 0 12px rgba(233, 30, 140, 0.2), 0 0 15px rgba(233, 30, 140, 0.15);
+}
+.magenta-accent .card-category-title {
+  color: var(--purple);
+}
+.magenta-accent .card-title-separator {
+  background-color: var(--purple);
+}
+.magenta-accent .check-icon {
+  color: var(--purple);
+}
+.magenta-accent:hover {
+  border-color: var(--purple);
+  box-shadow: 0 0 25px rgba(233, 30, 140, 0.15);
+}
+
+/* 3. YELLOW THEME MODULE */
+.yellow-accent .card-icon-box {
+  color: var(--yellow);
+  border: 1px solid rgba(255, 214, 0, 0.3);
+  box-shadow: inset 0 0 12px rgba(255, 214, 0, 0.2), 0 0 15px rgba(255, 214, 0, 0.15);
+}
+.yellow-accent .card-category-title {
+  color: var(--yellow);
+}
+.yellow-accent .card-title-separator {
+  background-color:var(--yellow);
+}
+.yellow-accent .check-icon {
+  color: var(--yellow);
+}
+.yellow-accent:hover {
+  border-color: var(--yellow);
+  box-shadow: 0 0 25px rgba(255, 214, 0, 0.15);
+}
+
+/* Hover Interaction Animation */
+.skills-card:hover {
+  transform: translateY(-6px);
+}
+.skills-card:hover .card-icon-box {
+  transform: scale(1.05);
+}
