@@ -6,34 +6,47 @@ function Projects() {
   //github links hyi nested array containing features used 
   const projectsData = [
     {
-      title: "LebanonTour",
-      description:<>A responsive travel guide showcasing Lebanon’s premier landmarks with <span className="gradient-highlight">dynamic location filtering, fully interactive responsive media grids, and optimized mobile-first navigation menus.</span></>,
-      tags: ["HTML5", "CSS3", "Bootstrap"],
-      githubLink: "https://github.com/Hidaya911/Project3"
+      title: "Talabaty",
+      description:<> A web-based marketplace designed to digitally connect customers  <span className="gradient-highlight">with local businesses across the Bekaa Valley, Lebanon using MERN stack technologies.</span></>,
+      tags: ["React", "Mongo","Express.js","Node.js","Bootstrap"],
+      githubLink: "https://github.com/Hidaya911/Talabaty/"
     },
     
     {
-      title: "BlackEyes Checkout",
-      description:<>A highly secure, multi-step checkout flow for a premier printing press, featuring <span className="gradient-highlight">real-time front-end form validation, interactive multi-stage progress tracking, and client-side payment data hashing.</span></>,
-      tags: ["HTML5", "CSS3", "Bootstrap","Javascript"],
-      githubLink: "https://github.com/Hidaya911/ProjectNB2"
+      title: "Velora Hotel",
+      description: <>A full-stack hotel reservation and management platform with Next.js<span className="gradient-highlight">to replace manual, error-prone booking at Velora Hotel.</span></>,
+      tags: ["Next.js", "Mongo", "Bootstrap","Typescript"],
+      githubLink: "https://github.com/Hidaya911/Velora-Hotel"
     },
     {
-      title: "HomePro",
-      description: <>A premium smart home service and repair platform featuring <span className="gradient-highlight">dynamic service filtering, an interactive appointment scheduling wizard, and fully responsive technician tracking views.</span></>,
-      tags: ["HTML5", "CSS3", "Bootstrap"],
-      githubLink: "https://github.com/Hidaya911/DH-Proj1"
+      title: "Edu Finance",
+      description: <>A full-stack School Financial Management System designed to centralize and <span className="gradient-highlight">simplify the financial operations of a Lebanese school.</span></>,
+      tags: ["Django", "Mongo", "Bootstrap"],
+      githubLink: "https://github.com/Hidaya911/EduFinance"
+    },
+    {
+      title: "Blood Donation",
+      description: <>A full-stack blood donation platform to connect blood donors, patients<span className="gradient-highlight">and donation centers through a simple and user-friendly web application.</span></>,
+      tags: ["Vue", "Fastify", "Typescript"],
+      githubLink: "https://github.com/Hidaya911/Blood-Donation"
+    },
+    {
+      title: "User Management Service",
+      description: <>A production-ready asynchronous REST API for user authentication, authorization<span className="gradient-highlight"> and profile management built with FastAPI, MongoDB (Motor), and Pydantic V2.</span></>,
+      tags: ["FastApi","Mongo"],
+      githubLink: "https://github.com/Hidaya911/User-Management-FASTAPI"
     }
+    
   ];
 
   return (
     <section id="projects" className="projects-section d-flex align-items-center">
-      <div className="container-fluid px-4 px-md-5">
+      <div className="container-fluid px-3 px-sm-4 px-md-5">
         
  
         <div className="row mb-5">
           <div className="col-12 text-start">
-            <div className="projects-tag d-flex align-items-center gap-2 mb-3 mx-4">
+            <div className="projects-tag d-flex align-items-center gap-2 mb-3 mx-0 mx-lg-4">
               <div className="tag-dots">
                 <span className="dot dot-blue"></span>
                 <span className="dot dot-yellow"></span>
@@ -42,14 +55,14 @@ function Projects() {
               <span className="line-separator"></span>
               <span className="tag-text fw-bold">WORK</span>
             </div>
-            <h2 className="projects-title fw-bold text-white m-0 mx-4">
+            <h2 className="projects-title fw-bold text-white m-0 mx-0 mx-lg-4">
               Featured projects
             </h2>
           </div>
         </div>
 
         {/*  Grid Layout ll cards */}
-        <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 g-md-4">
 
           {projectsData.map((project, index) => (
             <div key={index} className="col">
@@ -65,7 +78,7 @@ function Projects() {
                   {/* links of the github link nd styling it */}
                   <a 
                     href={project.githubLink} 
-                    className="gh-link-btn px-2.5 py-1 fw-bold text-decoration-none"
+                    className="gh-link-btn px-2 py-1 fw-bold text-decoration-none"
                     target="_blank" 
                     rel="noreferrer"
                   >
@@ -84,7 +97,7 @@ function Projects() {
                 {/* Badges for features used in each project */}
                 <div className="d-flex flex-wrap gap-2 pt-2">
                   {project.tags.map((tag, tagIdx) => (
-                    <span key={tagIdx} className="tech-badge px-3 py-1fw-medium">
+                    <span key={tagIdx} className="tech-badge px-3 py-1 fw-medium">
                       {tag}
                     </span>
                   ))}

@@ -32,12 +32,12 @@ function HireMe() {
 
   return (
     <section id="hire-me" className="hire-me-section d-flex align-items-center">
-      <div className="container-fluid px-4 px-md-5">
+      <div className="container-fluid px-3 px-sm-4 px-md-5">
         
 
          <div className="row mb-5">
           <div className="col-12 text-start">
-            <div className="projects-tag d-flex align-items-center gap-2 mb-3 mx-4">
+            <div className="projects-tag d-flex align-items-center gap-2 mb-3 mx-0 mx-lg-4">
               <div className="tag-dots">
                 <span className="dot dot-blue"></span>
                 <span className="dot dot-yellow"></span>
@@ -46,14 +46,14 @@ function HireMe() {
               <span className="line-separator"></span>
               <span className="tag-text fw-bold">Value Proposition</span>
             </div>
-            <h2 className="projects-title fw-bold text-white m-0 mx-4">
+            <h2 className="projects-title fw-bold text-white m-0 mx-0 mx-lg-4">
               Why companies should hire me
             </h2>
           </div>
         </div>
 
     
-        <div className="row g-4 pt-3 mx-4">
+        <div className="row g-3 g-md-4 pt-3 mx-0 mx-lg-4">
           {hiringPoints.map((point, index) => (
             <div key={index} className="col-12">
               <div className="value-row d-flex align-items-start gap-4">

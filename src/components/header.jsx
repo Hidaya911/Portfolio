@@ -5,7 +5,7 @@ function Header() {
     <>
       <nav className="body navbar navbar-expand-lg shadow-sm py-3 ">
         {/* Changed container to container-fluid and added px-4 for edge-to-edge spacing */}
-        <div className="container-fluid px-4">
+        <div className="container-fluid px-3 px-sm-4">
 
           {/* Combined Logo & Name */}
           <a className="navbar-brand d-flex align-items-center gap-2 fw-bold text-white navv m-0" href="#">
@@ -97,10 +97,10 @@ function Header() {
             <li><a className="nav-link text-secondary" href="#contact">Contact</a></li>
           </ul>
 
-          <div className="mt-4">
-            <button className="btnn btn btn-info text-white fw-semibold w-100 py-2">
-              Get in Touch
-            </button>
+          <div className="mt-4"> 
+           <a href="#contact" className="btnn btn btn-info text-white fw-semibold w-100 py-2">
+Get in Touch
+</a>
           </div>
         </div>
       </div>

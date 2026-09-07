@@ -4,7 +4,7 @@ import "../styles/footer.css";
 function Footer() {
   return (
     <footer className="footer-section py-4">
-      <div className="container-fluid px-4 px-md-5">
+      <div className="container-fluid px-3 px-sm-4 px-md-5">
         <div className="row align-items-center g-3 text-center text-md-start">
           
           {/* Left Column: Brand Signature Logo */}

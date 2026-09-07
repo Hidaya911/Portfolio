@@ -130,4 +130,9 @@
   letter-spacing: 0.2px;
   display: inline-block;
   -webkit-text-fill-color: initial; /* Strips card-level background clip interference */
+}@media (max-width: 575.98px) {
+  .projects-title { font-size: clamp(2.25rem, 11vw, 3.25rem); }
+  .project-card { padding: 1.15rem !important; }
+  .project-card-title { font-size: 1.3rem; }
+  .project-card-description { font-size: 14px; }
 }

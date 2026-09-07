@@ -99,4 +99,13 @@
   .value-item-title {
     font-size: 1.05rem;
   }
+}@media (max-width: 767.98px) {
+  .hire-me-section { padding: 64px 0; }
+  .value-row { gap: 1rem !important; }
+  .value-item-desc { font-size: .9rem; }
+}
+@media (max-width: 575.98px) {
+  .hire-me-section { padding: 52px 0 60px; }
+  .value-item-title { font-size: 1rem; }
+  .value-item-desc { line-height: 1.55; }
 }

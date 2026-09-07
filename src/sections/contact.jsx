@@ -26,7 +26,7 @@ function Contact() {
 
   return (
     <section id="contact" className="contact-section d-flex align-items-center">
-      <div className="container-fluid px-4 px-md-5">
+      <div className="container-fluid px-3 px-sm-4 px-md-5">
         
       
         <div className="row mb-5">
