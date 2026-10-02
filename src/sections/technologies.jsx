@@ -17,6 +17,9 @@ function Technologies() {
     { name: "Express.js", iconClass: "bi bi-cpu-fill text-white" },
     { name: "Django", iconClass: "bi bi-shield-shaded text-success" },
     { name: "FastAPI", iconClass: "bi bi-lightning-charge-fill text-warning" },
+    { name: "PostgreSQL", iconClass: "bi bi-database text-info" },
+    { name: "Supabase", iconClass: "bi bi-lightning-fill text-success" },
+    { name: "Tesseract OCR", iconClass: "bi bi-file-earmark-text text-purple" },
     { name: "Git", iconClass: "bi bi-git text-warning" },
     { name: "GitHub", iconClass: "bi bi-github text-white" },
     { name: "Figma", iconClass: "bi bi-palette-fill text-info" }

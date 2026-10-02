@@ -1,4 +1,3 @@
-import { useState } from 'react'
  import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
 import Header from "./components/header.jsx";
@@ -10,12 +9,14 @@ import Projects from "./sections/projects.jsx";
 import HireMe from "./sections/hireMe.jsx";
 import Contact from "./sections/contact.jsx";
 import Footer from "./components/footer.jsx";
+import './styles/refinements.css';
 function App() {
  
 
   return (
      <>
       <Header />
+      <main id="main-content">
       
       <Hero />
 
@@ -26,6 +27,7 @@ function App() {
       <Projects />
 <HireMe />
 <Contact />
+      </main>
 <Footer/>
     </>
   )

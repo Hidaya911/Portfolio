@@ -3,8 +3,8 @@ import "../styles/hero.css";
 function Hero() {
   return (
     <section className="hero-section d-flex align-items-center">
-      <div className="container-fluid px-3 px-sm-4 px-md-5 mx-0 mx-lg-4">
-        <div className="row align-items-center g-5">
+      <div className="container-fluid px-3 px-sm-4 px-md-5">
+        <div className="row align-items-center g-4 g-lg-5">
           
           {/* Left Column: Text Content */}
           <div className="col-12 col-lg-7 text-start">

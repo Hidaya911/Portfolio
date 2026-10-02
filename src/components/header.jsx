@@ -24,6 +24,7 @@ function Header() {
             data-bs-toggle="offcanvas"
             data-bs-target="#mobileMenu"
             aria-controls="mobileMenu"
+            aria-label="Open navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -65,9 +66,9 @@ function Header() {
             </ul>
 
             {/* Desktop Button pushed to the far right */}
-            <button className=" btnn btn btn-info text-white fw-semibold px-4 py-2">
+            <a href="#contact" className="btnn btn btn-info text-white fw-semibold px-4 py-2">
               Get in Touch
-            </button>
+            </a>
 
           </div>
         </div>
@@ -85,6 +86,7 @@ function Header() {
             type="button"
             className="btn-close btn-close-secondary"
             data-bs-dismiss="offcanvas"
+            aria-label="Close navigation"
           ></button>
         </div>
 
